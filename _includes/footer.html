@@ -1,0 +1,23 @@
+  <footer class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        {% for network in site.social %}
+                        <li><a target="_blank" href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li>Implemented with <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>

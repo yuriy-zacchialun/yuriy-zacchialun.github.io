@@ -1,0 +1,41 @@
+<!-- About Section -->
+    <section id="about" class="bg-darkest-gray">
+        <div class="container">
+            <div class="row">
+                {% for member in site.people %}
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img src="img/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
+                        <h4>{{ member.name }}</h4>
+                        <p class="text-muted">{{ member.position }}</p>
+                        <ul class="list-inline social-buttons">
+                            {% for network in member.social %}
+                            <li>
+                                <a target="_blank" href="{{ network.url }}">
+                                    <i class="fa fa-{{ network.title }}"></i>
+                                </a>
+                            </li>
+                            {% endfor %}
+                            {% for network in member.sociale %}
+                            <li>
+                                <a target="_blank" href="{{ network.url }}">
+                                    <i class="ai ai-{{ network.title }}"></i>
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="col-sm-9">
+                    <p class="large text-muted">Yuriy is a postdoc at the <a target="_blank" href="https://www.imtlucca.it">IMT School for Advanced Studies Lucca</a>, Italy,
+                                                within the <a target="_blank" href="https://sysma.imtlucca.it">SysMA</a> research unit.</p>
+                    <p class="large text-muted">He has been a visiting PhD student at the Department of Computer Science of the University of Oxford within the <a target="_blank" href="https://www.oxcav.org">OXCAV</a> group (Feb. 2017 - Jul. 2017).</p>
+                    <p class="large text-muted">Yuriy received his PhD in computer science from the <a target="_blank" href="http://www.gssi.it">Gran Sasso Science Institute (GSSI)</a>, Italy, in 2017 and
+                                                MEng in telecommunications engineering from <a target="_blank" href="http://www.univaq.it/en/">University of L’Aquila</a>, Italy, in 2012.</p>
+                    <p class="large text-muted">His research is focused on automatic control of stochastic hybrid systems, formal methods and security in cyber-physical domain.</p>
+                    <p class="large text-muted">When not at his desk Yuriy most likely surfing the waves of Versilia or exploring other wonders of Tuscany.</p>
+                </div>
+            </div>
+        </div>
+    </section>
