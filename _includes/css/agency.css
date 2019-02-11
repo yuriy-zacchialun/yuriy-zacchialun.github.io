@@ -23,7 +23,8 @@ body {
 }
 
 .text-light-gray {
-    color: #f7f7f7;
+  /* color: #f7f7f7; */
+  color: #d9d9d9;
 }
 
 p {
